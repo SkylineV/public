@@ -13,6 +13,8 @@
   (goto-char (region-end))
   (insert "'"))
 
+(set-language-environment "UTF-8")
+
 (global-set-key (kbd "<f9>") 'hs-toggle-hiding)
 (global-set-key (kbd "<f8>") 'surround-with-string)
 
@@ -36,9 +38,11 @@
  ;; If there is more than one, they won't work right.
  '(confirm-kill-emacs (quote y-or-n-p))
  '(custom-enabled-themes (quote (deeper-blue)))
+ '(default-frame-alist (quote ((width . 80))))
  '(global-linum-mode t)
  '(hs-minor-mode t t)
  '(inhibit-startup-screen t)
+ '(initial-frame-alist (quote ((width . 80))))
  '(js2-dynamic-idle-timer-adjust 5000)
  '(mouse-wheel-progressive-speed nil)
  '(package-archives
